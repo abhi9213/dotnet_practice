@@ -1,0 +1,63 @@
+﻿@*for view bag
+
+    <h1>view bag details</h1>
+        <h1>@ViewBag.abc</h1>
+        <h1>@ViewBag.test1</h1>
+        <h1>@ViewBag.test2</h1>
+        <h1>@ViewBag.test3</h1>
+        <h1>ViewBag.list</h1>
+
+
+        <ul>
+            @foreach(var items in ViewBag.list)
+                    {
+                        <l1>@items</l1>
+                    }
+        </ul>
+
+
+    for object of class empmodel
+
+
+    @{ ViewData["title"] = "homepage";
+
+        }
+        @model myproject.Models.employeemodel
+        @Html.TextBoxFor(m => m.id)
+        @Html.TextBoxFor(m => m.name)
+        @Html.TextBoxFor(m => m.email)
+
+
+    for viewdata
+
+
+    <h1>view bag details</h1>
+        <h1>@ViewData["abc"]</h1>
+        <h1>@ViewData["test1"]</h1>
+        <h1>@ViewData["test2"]</h1>
+        <h1>@ViewData["test3"]</h1>
+    <h1>@ViewBag["listData"]</h1>
+
+    <ul>
+            @foreach (var item in list<string>(ViewData["listData"])
+            {
+        <l1>@item</l1>
+            }
+
+
+        </ul>*@
+
+
+@*for tempdata
+
+    <h1> @TempData["abc"]</h1>
+    <h1> @TempData["test1"]</h1>
+
+    <h1> @TempData["test2"]</h1>
+
+    <h1> @TempData["test3"]</h1>*@
+
+
+<h1>  @Session["test1"]</h1>
+
+<h1>  @Session["test2"]</h1>

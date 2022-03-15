@@ -1,0 +1,32 @@
+﻿@model List<WebApp2db_conn.db_context.mvctable>
+
+
+<table class="table">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>mobile</th>
+        <th>dept</th>
+        <th>sal</th>
+        <th>zip</th>
+    </tr>
+
+
+
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>@item.id</td>
+            <td>@item.name</td>
+            <td>@item.email</td>
+            <td>@item.mobile</td>
+            <td>@item.dept</td>
+            <td>@item.salry</td>
+            <td>@item.zip</td>
+        </tr>
+
+
+    }
+</table>
